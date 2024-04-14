@@ -3,7 +3,7 @@
   <div class="position-fixed col-2">
       <div class="list-group mt-5">
           <a href="{{ route('home.index') }}" class="list-group-item list-group-item-action @if(Route::is('home.index')) active @endif">Home</a>
-          <a href="{{ route('pa-periode-kuliah.index') }}" class="list-group-item list-group-item-action @if(Route::is('pa-periode-kuliah.index')||Route::is('pa-periode-kuliah.create')||Route::is('pa-periode-kuliah.edit')) active @endif">List Periode Kuliah</a>
+          <a href="{{ route('pa-periode-kuliah.index') }}" class="list-group-item list-group-item-action @if(Route::is('pa-periode-kuliah.index')||Route::is('pa-periode-kuliah.create')||Route::is('pa-periode-kuliah.detail'))||Route::is('pa-periode-kuliah.edit')) active @endif">List Periode Kuliah</a>
           <a href="{{ route('users.index') }}" class="list-group-item list-group-item-action @if(Route::is('users.index')||Route::is('users.create')||Route::is('users.edit')) active @endif">List Mahasiswa</a>
           <a href="{{ route('dosen.index') }}" class="list-group-item list-group-item-action @if(Route::is('dosen.index')||Route::is('dosen.create')||Route::is('dosen.detail')||Route::is('dosen.edit')) active @endif">List Dosen</a>
           <a href="{{ route('pa-kelas.index') }}" class="list-group-item list-group-item-action @if(Route::is('pa-kelas.index')||Route::is('pa-kelas.create')||Route::is('pa-kelas.detail')||Route::is('pa-kelas.edit')) active @endif">List Kelas</a>

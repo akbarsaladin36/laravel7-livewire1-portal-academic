@@ -18,6 +18,7 @@ class CreatePaPeriodeKuliahsTable extends Migration
             $table->string('periode_kuliah_finish_year_id',10)->nullable();
             $table->string('periode_kuliah_semester_code',30)->nullable();
             $table->string('periode_kuliah_semester_name',100)->nullable();
+            $table->string('periode_kuliah_semester_slug',255)->nullable();
             $table->dateTime('periode_kuliah_created_date')->nullable();
             $table->integer('periode_kuliah_created_user_id')->nullable();
             $table->string('periode_kuliah_created_username')->nullable();

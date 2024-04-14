@@ -61,6 +61,9 @@ Route::middleware('admin.auth')->group(function(){
     Route::livewire('/kelas/detail-kelas/{kelas_id}/edit','pa-kelas.edit')->layout('app')->name('pa-kelas.edit');
 
     Route::livewire('/periode-tahun-kuliah','pa-periode-kuliah.index')->layout('app')->name('pa-periode-kuliah.index');
+    Route::livewire('/periode-tahun-kuliah/create-periode','pa-periode-kuliah.create')->layout('app')->name('pa-periode-kuliah.create');
+    Route::livewire('/periode-tahun-kuliah/detail-periode/{periode_kuliah_slug}','pa-periode-kuliah.detail')->layout('app')->name('pa-periode-kuliah.detail');
+    Route::livewire('/periode-tahun-kuliah/detail-periode/{periode_kuliah_slug}/edit','pa-periode-kuliah.edit')->layout('app')->name('pa-periode-kuliah.edit');
 
 });
 

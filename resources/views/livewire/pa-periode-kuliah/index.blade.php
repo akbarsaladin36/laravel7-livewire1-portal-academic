@@ -38,7 +38,7 @@
                         <td>{{ $periode_kuliah->periode_kuliah_semester_name }}</td>
                         <td>
                             <a href="{{ route('pa-periode-kuliah.detail',['periode_kuliah_slug'=>$periode_kuliah->periode_kuliah_semester_slug]) }}" class="btn btn-success">Edit</a>
-                            <button wire:click="#" class="btn btn-danger">Delete</button>
+                            <button wire:click="delete('{{ $periode_kuliah->periode_kuliah_semester_slug }}')" class="btn btn-danger">Delete</button>
                         </td>
                     </tr>
                 @endforeach

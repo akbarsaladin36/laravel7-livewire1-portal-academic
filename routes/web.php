@@ -17,7 +17,11 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::livewire('/','index')->layout('app')->name('index');
+Route::middleware('login.register.auth')->group(function(){
+
+    Route::livewire('/','index')->layout('app')->name('index');
+
+});
 
 Route::middleware('admin.auth')->group(function(){
 

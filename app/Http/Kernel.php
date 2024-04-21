@@ -67,6 +67,7 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'mahasiswa.auth' => \App\Http\Middleware\UserAuthMiddleware::class,
         'admin.auth' => \App\Http\Middleware\AdminAuthMiddleware::class,
-        'dosen.auth' => \App\Http\Middleware\DosenAuthMiddleware::class
+        'dosen.auth' => \App\Http\Middleware\DosenAuthMiddleware::class,
+        'login.register.auth' => \App\Http\Middleware\LoginRegisterMiddleware::class
     ];
 }
